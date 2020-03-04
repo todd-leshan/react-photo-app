@@ -6,6 +6,7 @@ import store from "./redux/store";
 
 import App from "./App";
 import Cutup from "./views/Cutup";
+import CutupGridView from "./views/CutupGridView";
 import Home from "./views/Home";
 
 const AllRoutes = () => (
@@ -14,6 +15,7 @@ const AllRoutes = () => (
       <Switch>
         <Route path="/" component={App} exact />
         <Route path="/cutup" component={Cutup} />
+        <Route path="/cutup-grid-view" component={CutupGridView} />
         <Route path="/home" component={Home} />
       </Switch>
     </Router>

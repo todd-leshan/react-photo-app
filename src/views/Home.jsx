@@ -16,8 +16,8 @@ const Home = props => {
         avatar="avatar-minion.jpg"
       />
       <main>
-        <AddImageBtn />
-        <div className="container--images adaptive">
+        <div className="container--images grid-view">
+          <AddImageBtn />
           {props.imagesData.length > 0 &&
             props.imagesData.map((item, index) => (
               <Fragment key={index}>

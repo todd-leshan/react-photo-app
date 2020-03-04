@@ -26,8 +26,8 @@ const AddImageBtn = props => {
   };
 
   return (
-    <div className="container--add-img">
-      <form action="#">
+    <div className="container--image">
+      <form action="#" className="form--add-img">
         <label htmlFor="file--img">
           <input
             type="file"

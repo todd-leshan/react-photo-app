@@ -10,7 +10,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Link to="/cutup" className="App-link">
-          Cutup Page
+          Cutup Page - adaptive view
+        </Link>
+        <Link to="/cutup-grid-view" className="App-link">
+          Cutup Page - grid view
         </Link>
         <Link to="/home" className="App-link">
           Home

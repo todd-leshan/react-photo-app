@@ -4,7 +4,7 @@ import avatar from "../assets/avatar-minion.jpg";
 import sample from "../assets/sample.png";
 import sample2 from "../assets/sample2.jpg";
 
-const Cutup = props => {
+const CutupGridView = props => {
   return (
     <div className="App">
       <header>
@@ -21,7 +21,7 @@ const Cutup = props => {
         </div>
       </header>
       <main>
-        <div className="container--images adaptive-view">
+        <div className="container--images grid-view">
           <div className="container--image">
             <form action="#" className="form--add-img">
               <label htmlFor="file--img">
@@ -69,4 +69,4 @@ const Cutup = props => {
   );
 };
 
-export default Cutup;
+export default CutupGridView;
