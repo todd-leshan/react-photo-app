@@ -1,9 +1,13 @@
-import React from "react";
-
+import React, { Fragment } from "react";
+import { connect } from "react-redux";
 import Header from "../components/Header";
 import AddImageBtn from "../components/AddImageBtn";
 
-const Home = () => {
+const mapStateToProps = state => ({
+  imagesData: state.imagesData
+});
+
+const Home = props => {
   return (
     <div>
       <Header
@@ -13,9 +17,19 @@ const Home = () => {
       />
       <main>
         <AddImageBtn />
+        <div className="container--images">
+          {props.imagesData.length > 0 &&
+            props.imagesData.map((item, index) => (
+              <Fragment key={index}>
+                <div className="container--image">
+                  <img src={item} alt="img alt" />
+                </div>
+              </Fragment>
+            ))}
+        </div>
       </main>
     </div>
   );
 };
 
-export default Home;
+export default connect(mapStateToProps)(Home);

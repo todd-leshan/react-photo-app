@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import get from "lodash/get";
 import { connect } from "react-redux";
 import { addImage } from "../redux/actions";
@@ -14,7 +14,6 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const AddImageBtn = props => {
-  const [imgSrc, setImgSrc] = useState();
   const handleUploadImg = event => {
     const input = event.target;
     const file = get(input, "files[0]");
@@ -23,7 +22,7 @@ const AddImageBtn = props => {
       return;
     }
 
-    setImgSrc(URL.createObjectURL(file));
+    props.handleAddImage({ newImage: URL.createObjectURL(file) });
   };
 
   return (
