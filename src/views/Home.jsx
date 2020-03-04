@@ -2,9 +2,11 @@ import React, { Fragment } from "react";
 import { connect } from "react-redux";
 import Header from "../components/Header";
 import AddImageBtn from "../components/AddImageBtn";
+import ViewControls from "../components/ViewControls";
 
 const mapStateToProps = state => ({
-  imagesData: state.imagesData
+  imagesData: state.imagesData,
+  layoutView: state.layoutView
 });
 
 const Home = props => {
@@ -16,11 +18,8 @@ const Home = props => {
         avatar="avatar-minion.jpg"
       />
       <main>
-        <div className="container--view-controls">
-          <div className="container--view-control adaptive-view"></div>
-          <div className="container--view-control grid-view active"></div>
-        </div>
-        <div className="container--images grid-view">
+        <ViewControls />
+        <div className={`container--images ${props.layoutView}`}>
           <AddImageBtn />
           {props.imagesData.length > 0 &&
             props.imagesData.map((item, index) => (

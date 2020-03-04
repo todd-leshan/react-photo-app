@@ -1,4 +1,4 @@
-import { ADD_IMAGE } from "./action-types";
+import { ADD_IMAGE, VIEW_GRID, VIEW_ADAPTIVE } from "./action-types";
 
 export const addImage = ({ newImage }) => {
   return {
@@ -6,5 +6,17 @@ export const addImage = ({ newImage }) => {
     payload: {
       newImage
     }
+  };
+};
+
+export const switchToAdaptiveView = () => {
+  return {
+    type: VIEW_ADAPTIVE
+  };
+};
+
+export const switchToGridView = () => {
+  return {
+    type: VIEW_GRID
   };
 };
