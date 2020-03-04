@@ -16,6 +16,10 @@ const Home = props => {
         avatar="avatar-minion.jpg"
       />
       <main>
+        <div className="container--view-controls">
+          <div className="container--view-control adaptive-view"></div>
+          <div className="container--view-control grid-view active"></div>
+        </div>
         <div className="container--images grid-view">
           <AddImageBtn />
           {props.imagesData.length > 0 &&

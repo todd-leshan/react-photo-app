@@ -21,6 +21,10 @@ const CutupGridView = props => {
         </div>
       </header>
       <main>
+        <div className="container--view-controls">
+          <div className="container--view-control adaptive-view"></div>
+          <div className="container--view-control grid-view active"></div>
+        </div>
         <div className="container--images grid-view">
           <div className="container--image">
             <form action="#" className="form--add-img">

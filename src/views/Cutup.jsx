@@ -21,6 +21,10 @@ const Cutup = props => {
         </div>
       </header>
       <main>
+        <div className="container--view-controls">
+          <div className="container--view-control adaptive-view active"></div>
+          <div className="container--view-control grid-view"></div>
+        </div>
         <div className="container--images adaptive-view">
           <div className="container--image">
             <form action="#" className="form--add-img">

@@ -12,8 +12,7 @@ const initialState = {
 const rootReducer = (state = initialState, action) => {
   if (action.type === ADD_IMAGE) {
     const newState = { ...state };
-    newState.imagesData = [...state.imagesData];
-    newState.imagesData.unshift(action.payload.newImage);
+    newState.imagesData = [action.payload.newImage, ...state.imagesData];
     return newState;
   }
 
