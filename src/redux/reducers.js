@@ -9,6 +9,8 @@ const rootReducer = (state = initialState, action) => {
     const newState = { ...state };
     return newState.imagesData.unshift(action.payload.image);
   }
+
+  return state;
 };
 
 export default rootReducer;

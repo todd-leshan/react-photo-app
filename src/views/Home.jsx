@@ -1,6 +1,7 @@
 import React from "react";
 
 import Header from "../components/Header";
+import AddImageBtn from "../components/AddImageBtn";
 
 const Home = () => {
   return (
@@ -10,6 +11,9 @@ const Home = () => {
         subtitle="Pellentesque urna lacus, porta a rutrum vel, posuere dictum velit."
         avatar="avatar-minion.jpg"
       />
+      <main>
+        <AddImageBtn />
+      </main>
     </div>
   );
 };
