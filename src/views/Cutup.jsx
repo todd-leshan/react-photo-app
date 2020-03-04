@@ -21,22 +21,48 @@ const Cutup = props => {
         </div>
       </header>
       <main>
+        <div className="container--add-img">
+          <form action="#">
+            <label htmlFor="file--img">
+              <input
+                type="file"
+                accept="image/png, image/jpeg"
+                id="file--img"
+              />
+            </label>
+          </form>
+        </div>
         <div className="container--images">
-          <div className="container--image"></div>
           <div className="container--image">
-            <img src={sample} alt="img alt" />
+            <img src={sample} alt="img alt" loading="lazy" />
           </div>
           <div className="container--image">
-            <img src={sample2} alt="img alt" />
+            <img src={sample2} alt="img alt" loading="lazy" />
           </div>
-          <div
-            className="container--image"
-            style={{ backgroundImage: `url(${sample})` }}
-          ></div>
-          <div className="container--image"></div>
-          <div className="container--image"></div>
-          <div className="container--image"></div>
-          <div className="container--image"></div>
+          <div className="container--image">
+            <img src={sample2} alt="img alt" loading="lazy" />
+          </div>
+          <div className="container--image">
+            <img src={sample2} alt="img alt" loading="lazy" />
+          </div>
+          <div className="container--image">
+            <img src={sample} alt="img alt" loading="lazy" />
+          </div>
+          <div className="container--image">
+            <img src={sample2} alt="img alt" loading="lazy" />
+          </div>
+          <div className="container--image">
+            <img src={sample2} alt="img alt" loading="lazy" />
+          </div>
+          <div className="container--image">
+            <img src={sample} alt="img alt" loading="lazy" />
+          </div>
+          <div className="container--image">
+            <img src={sample} alt="img alt" loading="lazy" />
+          </div>
+          <div className="container--image">
+            <img src={sample} alt="img alt" loading="lazy" />
+          </div>
         </div>
       </main>
     </div>
