@@ -17,7 +17,7 @@ const Home = props => {
       />
       <main>
         <AddImageBtn />
-        <div className="container--images">
+        <div className="container--images adaptive">
           {props.imagesData.length > 0 &&
             props.imagesData.map((item, index) => (
               <Fragment key={index}>

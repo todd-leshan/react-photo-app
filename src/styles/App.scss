@@ -1,7 +1,7 @@
 @import "./imports/_normalize.scss";
 @import "./imports/_variables.scss";
 
-.App {
+#root {
   text-align: center;
   margin: auto;
   min-width: 375px;
@@ -175,7 +175,7 @@ main * {
   flex-wrap: wrap;
 }
 
-.container--image {
+.adaptive .container--image {
   height: 30vh;
   flex-grow: 1;
 
