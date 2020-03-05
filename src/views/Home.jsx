@@ -11,7 +11,7 @@ const mapStateToProps = state => ({
 
 const Home = props => {
   return (
-    <div>
+    <>
       <Header
         title="Vestibulum varius libero ac libero ultricies"
         subtitle="Pellentesque urna lacus, porta a rutrum vel, posuere dictum velit."
@@ -31,7 +31,7 @@ const Home = props => {
             ))}
         </div>
       </main>
-    </div>
+    </>
   );
 };
 
